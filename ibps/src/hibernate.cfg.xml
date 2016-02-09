@@ -9,8 +9,8 @@
 
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/ibps</property>
-        <property name="hibernate.connection.username">postgres</property>
-        <property name="hibernate.connection.password">Independent12#</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">password#</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 
         <!-- Oracle Database connection settings -->

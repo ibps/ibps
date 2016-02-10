@@ -6,8 +6,8 @@ import javax.persistence.*;
  * Created by Rajesh on 10-02-2016.
  */
 @Entity
-@Table(name = "ques_set_master", schema = "", catalog = "ibps")
-public class QuesSetMasterEntity {
+@Table(name = "ques_set_master")
+public class QuesSetMasterEntity implements Serializable{
     private int id;
     private String setName;
     private int examDetailsId;

@@ -7,7 +7,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "ques_setion_master")
-public class QuesSetionMasterEntity {
+public class QuesSetionMasterEntity implements Serializable {
     private int id;
     private String sectionName;
 

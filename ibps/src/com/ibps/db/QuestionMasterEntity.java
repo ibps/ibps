@@ -7,8 +7,8 @@ import java.util.Arrays;
  * Created by Rajesh on 10-02-2016.
  */
 @Entity
-@Table(name = "question_master", schema = "", catalog = "ibps")
-public class QuestionMasterEntity {
+@Table(name = "question_master")
+public class QuestionMasterEntity implements Serializable{
     private int id;
     private int quesSectionMasterId;
     private String direction;

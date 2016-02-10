@@ -1,14 +1,15 @@
 package com.ibps.db;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Arrays;
 
 /**
  * Created by Rajesh on 10-02-2016.
  */
 @Entity
-@Table(name = "answer_master", schema = "", catalog = "ibps")
-public class AnswerMasterEntity {
+@Table(name = "answer_master")
+public class AnswerMasterEntity implements Serializable {
     private long id;
     private String serialNo;
     private byte[] answerStatement;

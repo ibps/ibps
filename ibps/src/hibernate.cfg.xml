@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC
-    "-//Hibernate/Hibernate Configuration DTD//EN"
-    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
 
@@ -9,8 +9,6 @@
 
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/ibps</property>
-        <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.connection.password">password#</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 
         <!-- Oracle Database connection settings -->
@@ -40,8 +38,19 @@
 
 
         <!--DTOs-->
-		<mapping class="com.ibps.dto.UserDTO"/>
-		
+        <mapping class="com.ibps.db.AnswerMasterEntity"/>
+        <mapping class="com.ibps.db.ExamDetailsEntity"/>
+        <mapping class="com.ibps.db.ExamDetailsSectionEntity"/>
+        <mapping class="com.ibps.db.ExamMasterEntity"/>
+        <mapping class="com.ibps.db.QuesSetMasterEntity"/>
+        <mapping class="com.ibps.db.QuesSetionMasterEntity"/>
+        <mapping class="com.ibps.db.QuestionMasterEntity"/>
+        <mapping class="com.ibps.db.QuestionSetMappingEntity"/>
+        <mapping class="com.ibps.db.StudentAnsDetailsEntity"/>
+        <mapping class="com.ibps.db.StudentAnsMasterEntity"/>
+        <mapping class="com.ibps.db.UserMasterEntity"/>
+        <mapping class="com.ibps.db.UserTypeMasterEntity"/>
+
     </session-factory>
 
 </hibernate-configuration>

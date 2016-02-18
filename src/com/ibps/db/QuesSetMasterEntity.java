@@ -1,7 +1,6 @@
 package com.ibps.db;
 
 import javax.persistence.*;
-import java.io.Serializable;
 
 /**
  * Created by Rajesh on 10-02-2016.

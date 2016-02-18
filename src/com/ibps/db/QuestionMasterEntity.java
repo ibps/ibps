@@ -1,6 +1,7 @@
 package com.ibps.db;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Arrays;
 
 /**
@@ -8,7 +9,7 @@ import java.util.Arrays;
  */
 @Entity
 @Table(name = "question_master")
-public class QuestionMasterEntity implements Serializable{
+public class QuestionMasterEntity implements Serializable {
     private int id;
     private int quesSectionMasterId;
     private String direction;

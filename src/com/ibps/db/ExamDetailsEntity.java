@@ -1,13 +1,14 @@
 package com.ibps.db;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * Created by Rajesh on 10-02-2016.
  */
 @Entity
 @Table(name = "exam_details")
-public class ExamDetailsEntity implements Serializable{
+public class ExamDetailsEntity implements Serializable {
     private int id;
     private int examMasterId;
     private String examType;
